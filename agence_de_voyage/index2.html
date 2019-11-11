@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Agence de voyage</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Crete+Round" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/stellarnav.min.css" >
+
+    <style>
+        .slicknav_menu {
+            display:none;
+        }
+
+        @media screen and (max-width: 40em) {
+            /* #menu is the original menu */
+            .js #menu {
+                display:none;
+            }
+
+            .js .slicknav_menu {
+                display:block;
+            }}
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="stellarnav">
+        <h1>Travel Agency<span class="orange">.</span></h1>
+        <ul>
+            <li><a href="#main_img" >ACCUEIL</a></li>
+            <li><a href="#steps" >DESTINATION</a></li>
+            <li><a href="#possibilities" >CIRCUIT</a></li>
+            <li><a href="#contact" >CONTACT</a></li>
+        </ul>
+    </div>
+</div>
+<!--<header>-->
+
+<!--    <div class="container">-->
+<!--        <h1>Travel Agency<span class="orange">.</span></h1>-->
+<!--        <nav class="topnav" id="myTopnav">-->
+
+<!--                <a href="#main_img" >ACCUEIL</a>-->
+<!--                <a href="#steps" >DESTINATION</a>-->
+<!--                <a href="#possibilities" >CIRCUIT</a>-->
+<!--                <a href="#contact" >CONTACT</a>-->
+<!--                <a  class="icon" onclick="myFunction()">-->
+<!--                    <i class="fa fa-bars"></i>-->
+<!--                </a>-->
+
+<!--        </nav>-->
+
+
+<!--    </div>-->
+<!--</header>-->
+
+<section id="main_img">
+    <div class="container">
+        <h2>organise votre <br><strong>voyage sur mesure</strong></h2>
+        <button>Par ici</button>
+    </div>
+</section>
+
+<section id="steps">
+    <div class="container">
+        <div class="card">
+            <img src="images/steps-icon-1.png" alt="planifier">
+            <h3>Planifier</h3>
+            <p>Confiez-nous vos reves d'evasion : en famille ou entre amis, nous trouverons la formule qui comblera
+                vos attentes.</p>
+        </div>
+        <div class="card">
+            <img src="images/steps-icon-2.png" alt="organiser">
+            <h3>Organiser</h3>
+            <p>Beneficiez de l'expertise de nos specialistes de chaque destination, ils vous accompagnent
+                dans la realisation de votre voyage.</p>
+        </div>
+        <div class="card">
+            <img src="images/steps-icon-3.png" alt="voyager">
+            <h3>Voyager</h3>
+            <p>  Nous nous chargeons d'assurer votre securite et de veiller a votre pleine serenite tout au long
+                de votre voyage.</p>
+        </div>
+    </div>
+    <div class="clear"></div>
+</section>
+<section id="possibilities">
+    <div class="container">
+        <article class="article1">
+            <div class="overlay">
+                <h3>Partez en famille</h3>
+                <p><small>Offrez le meilleur a ceux que vous aimez et partagez des moments fabuleux !</small></p>
+                <a href="#" class="button-2">Plus d'infos</a>
+            </div>
+        </article>
+        <article class="article2">
+            <div class="overlay">
+                <h3>Envie de s'evader</h3>
+                <p><small> un peu d'evasion serait le bienvenue et ferait le plus grand bien !</small></p>
+                <a href="#" class="button-2">Plus d'infos</a>
+            </div>
+        </article>
+    </div>
+    <div class="clear"></div>
+</section>
+<section id="contact">
+    <div class="container">
+        <h3>Contacter-nous</h3>
+        <p>Chez Travel Agency nous savons que voyager est une aventure humaine mais egalement un engagement financier
+            important pour vous. C'est pourquoi nous mettons un point d'honneur a prendre en compte chacune de vos attentes
+            pour vous aider dans la preparation de votre sejour, circuit ou voyage sur mesure.</p>
+        <form>
+            <label for="name">Nom
+            <input id="name" name="name" type="text" placeholder="Votre nom"></label>
+            <label for="email">Email
+            <input type="email" name="email" id="email" placeholder="Votre Email"></label>
+            <input type="submit" value="Ok" class="button-3">
+        </form>
+    </div>
+</section>
+
+<footer>
+    <h1>Travel Agency<span class="orange">.</span></h1>
+    <p>Copyright © Tous droits reserves.</p>
+
+</footer>
+
+
+
+</body>
+<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script src="https://code.jquery.com/jquery-migrate-3.0.1.js"></script>
+
+
+<script src="travel_agency.js"></script>
+
+<script src="js/stellarnav.min.js"></script>
+<script type="text/javascript">
+    jQuery(document).ready(function($) {
+        jQuery('.stellarnav').stellarNav({
+            breakpoint:770,
+            theme: 'light',
+            menuLabel:'',
+            position:'left',
+            closeBtn: 'false',
+            closeLabel:''
+
+        });
+    });
+</script>
+</html>
